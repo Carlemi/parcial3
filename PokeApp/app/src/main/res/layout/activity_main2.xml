@@ -13,23 +13,78 @@
     tools:context="com.example.carlos.pokeapp.Main2Activity"
     android:background="@mipmap/pok">
 
-    <ImageView
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@android:drawable/btn_star"
-        android:layout_marginStart="18dp"
-        android:layout_marginTop="124dp"
-        android:id="@+id/imageView"
         android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignStart="@+id/imageView"
+        android:layout_marginTop="53dp"
+        android:id="@+id/npc"
+        android:background="@android:color/background_light"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_marginTop="10dp"
+        android:id="@+id/pp1"
+        android:background="@android:color/background_light"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/njg"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/imageView3"
+        android:textStyle="bold"
+        android:background="@android:color/background_light" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView3"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/pp2"
+        android:background="@android:color/background_light"
+        android:textStyle="bold" />
 
     <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@android:drawable/btn_star"
+        android:id="@+id/imageView3"
+        android:layout_marginTop="44dp"
+        android:layout_below="@+id/pp1"
+        android:layout_alignEnd="@+id/pp2" />
+
+    <ImageView
+        android:layout_width="100dp"
+        app:srcCompat="@android:drawable/btn_star"
+        android:id="@+id/imageView"
+        android:layout_height="100dp"
+        android:layout_below="@+id/npc"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:text="GOLPEAR"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@android:drawable/btn_star"
-        android:layout_alignBottom="@+id/imageView"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="34dp"
-        android:layout_marginBottom="16dp"
-        android:id="@+id/imageView3" />
+        android:id="@+id/btngolpe"
+        android:layout_below="@+id/pp2"
+        android:layout_alignEnd="@+id/pp1" />
+
+    <Button
+        android:text="Volver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/back"
+        android:layout_alignBaseline="@+id/btngolpe"
+        android:layout_alignBottom="@+id/btngolpe"
+        android:layout_toEndOf="@+id/pp1"
+        android:layout_marginStart="75dp" />
 </RelativeLayout>
